@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>AB Testing</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: x-large">AB Testing</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item"><a class="nav-link" href="#overview">overview</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#hypotheses">hypotheses</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#data">data</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#conclusions">conclusions</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="outer" id="overview">
+      <div class="container">
+          <div class="card justify-content-center align-items-center">
+              <div class="card-body m-5">
+                  <h4 class="text-center">Part 0: Overview</h4>
+                  <br>
+                  <p>The goal of this assignment was to perform an A/B test and statistical analysis to gather insight into two different UI designs. A/B testing is a user research technique, which is used to test whether the A or B version is a better design. This project involves simple A/B testing of two versions of a website. The metrics collected are then used to see which version among the baseline(A) or variant(B) performed better. The two images below depict the A and B versions of the interface for an online cactus shop website that can be found <a class="gray-text" href="https://mighty-peak-04640.herokuapp.com/" target="_blank">here</a>. Note that either version A or version B will open randomly from this link, and that the changes are not complex since the focus of this project is the process of A/B testing, not interface design.</p>
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h6>Interface A</h6>
+                    <img class="image" src="./images/A.png" alt="A image">
+                    <br>
+                    <h6>Interface B</h6>
+                    <img class="image" src="./images/B.png" alt="B image">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="outer" id="hypotheses">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Part 1: Creating Hypotheses for Statistical Tests</h4>
+                    <br>
+                    <p>The probability of a hypothesis given the data is very hard to compute; it is easier to compute the probability of the data given a hypothesis. Since we cannot hypothesize that we are correct from probable data, we try to disprove the opposite, or "null," hypothesis. We can do so using the following steps:
+                      <ol>
+                        <li>State the null hypothesis and run an experiment.</li>
+                        <li>Find the probability the result would have occured given the null hypothesis.</li>
+                        <li>If that probability is less than 5%, then the alternate hypothesis is true.</li>
+
+                      </ol>I created null and alternative hypotheses for two metrics: <i>Time to Completion</i> (the time it takes to complete the desired task - in this case, order cacti) and <i>Return Rate</i> (the number of times a user returned to the page).</p>
+                    <br>
+                    <h6>Time to Completion</h6>
+                    <p><u>Null Hypothesis</u>: the time to completion for users of interface B is no better than the time to completion for users of interface A. In other words, the time to completion for users of interface B is either greater than that of A, or less than that of A <i>but not to a statistically significant degree</i>.</p>
+                    <p><u>Alternative Hypothesis</u>: the time to completion for users of interface B is better than the time to completion for users of interface A. Mathematically, this means that the time to completion for users of interface is B less than that of A by a statistically significant degree. In this case, B most likely performs better than A because the "Add to Cart" buttons are all evenly aligned, and therefore are easier to sequentially and efficiently select. Additionally, the user has to spend less time understanding the format of the page since the different items' sections are clearly delineated by horizontal lines, and the spacing allows for greater visual clarity.</p>
+                    <br>
+                    <h6>Return Rate</h6>
+                    <p><u>Null Hypothesis</u>: the return rate for users of interface B is no better than the return rate for users of interface A. In other words, the return rate for users of interface B is either greater than that of A, or less than that of A <i>but not to a statistically significant degree</i>.</p>
+                    <p><u>Alternative Hypothesis</u>: the return rate for users of interface B is better than the return rate for users of interface A. Mathematically, this means that the return rate for users of interface is B less than that of A by a statistically significant degree. In this case, B most likely performs better than A because B's layout is easier to understand, and therefore the user is immediately able to select the items they want and does not need to go back to review their choices before checking out. Additionally, since B's layout is more aesthetically-pleasing, the user will be motivated to make a purchase and will not be feel the need to second-guess themselves and return to review the original page before paying and exiting the site.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer" id="data">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Part 2: Collecting Data and Applying Scripts</h4>
+                    <br>
+                    <p>For this A/B test, I collected data from over 40 user sessions. The link provided in the <i>Overview</i> section, which randomly opens to interface A or B, was sent to my peers. They filled their carts with at least $150 of cacti. Each of their clicks was recorded, providing me with session-specific data including their date and time of access and their click targets.</p>
+                    <br>
+                    <p>The data was then extracted and filtered, and transferred to Excel for further processing. The processed data underwent statistical tests run by python scripts, the results of which are analyzed in Part 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer" id="conclusions">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Part 3: Conclusions and Takeaways</h4>
+                    <p>After running multiple statistical tests, I concluded that the difference between the performances of interfaces B and A was not statistically significant. The following infographic summarizes the results of these tests:</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <img class="infographic" src="./images/infographic1.png" alt="infographic 1">
+                      <br>
+                      <img class="infographic" src="./images/infographic2.png" alt="infographic 2">
+                    </div>
+                    <br>
+                    <p>Finally, here are my overall takeaways from this assignment about A/B testing in general:
+                      <ul>
+                        <li>Collecting data from a limited audience makes test results less meaningful. In this case, we were gathering data only from our fellow students who understood the goals of the data collection and tests, and this likely impacted how they interacted with the two interfaces.</li>
+                        <li>It is possible that several small changes will not change the user experience in a way that will appear statistically significant, even if these changes dramatically improve a website's aesthetics (although aesthetics are subjective...).</li>
+                        <li>A/B testing can inform creators about how users interact with their product. Importantly, creators may discover that changes that they consider important are not of significant value to users.</li>
+                      </ul>
+                      </p>
+                </div>
+            </div>
+        </div>
+    </div>
+             
+
+    <footer class="text-center py-3 footer align-items-center text-light ">
+    </footer>
+
+</body>
+
+</html>
