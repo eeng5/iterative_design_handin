@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>AB Testing</title>
+    <title>Iterative Design</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="font-size: x-large">AB Testing</a>
+            <a class="navbar-brand" href="#" style="font-size: x-large">Iterative Design</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="navbar-item"><a class="nav-link" href="#overview">overview</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="#hypotheses">hypotheses</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="#data">data</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="#conclusions">conclusions</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#sketch">sketching & wireframing</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#mockup">mockups</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#testing">testing</a></li>
                 </ul>
             </div>
         </div>
@@ -48,65 +47,160 @@
       </div>
     </div>
 
-    <div class="outer" id="hypotheses">
+    <div class="outer" id="sketch">
         <div class="container">
             <div class="card justify-content-center align-items-center">
                 <div class="card-body m-5">
-                    <h4 class="text-center">Part 1: Creating Hypotheses for Statistical Tests</h4>
+                    <h4 class="text-center">Part 1: Sketching and Wireframing</h4>
                     <br>
-                    <p>The probability of a hypothesis given the data is very hard to compute; it is easier to compute the probability of the data given a hypothesis. Since we cannot hypothesize that we are correct from probable data, we try to disprove the opposite, or "null," hypothesis. We can do so using the following steps:
-                      <ol>
-                        <li>State the null hypothesis and run an experiment.</li>
-                        <li>Find the probability the result would have occured given the null hypothesis.</li>
-                        <li>If that probability is less than 5%, then the alternate hypothesis is true.</li>
-
-                      </ol>I created null and alternative hypotheses for two metrics: <i>Time to Completion</i> (the time it takes to complete the desired task - in this case, order cacti) and <i>Return Rate</i> (the number of times a user returned to the page).</p>
+                    <p><u>Introduction</u>
+                        <br>Kuleana is a startup that specializes in plant based raw tuna. There are several companies that make vegetable based meat substitutes, such as Beyond Meat, but currently, there is yet to be an established seafood equivalent. Kuleana hopes to capitalize on this by creating 100 percent plant based, sushi-grade raw tuna so that consumers can enjoy fish without the environmental and ethical consequences.</p>
                     <br>
-                    <h6>Time to Completion</h6>
-                    <p><u>Null Hypothesis</u>: the time to completion for users of interface B is no better than the time to completion for users of interface A. In other words, the time to completion for users of interface B is either greater than that of A, or less than that of A <i>but not to a statistically significant degree</i>.</p>
-                    <p><u>Alternative Hypothesis</u>: the time to completion for users of interface B is better than the time to completion for users of interface A. Mathematically, this means that the time to completion for users of interface is B less than that of A by a statistically significant degree. In this case, B most likely performs better than A because the "Add to Cart" buttons are all evenly aligned, and therefore are easier to sequentially and efficiently select. Additionally, the user has to spend less time understanding the format of the page since the different items' sections are clearly delineated by horizontal lines, and the spacing allows for greater visual clarity.</p>
+                    <p><u>Project Context</u>
+                        <br>The goal of this project was to design an interface for an emerging startup. Our group chose to design a website for Kuleana with the purpose of informing consumers about the product and company while providing an easy way to purchase the tuna. Because we focused our design on being intuitive and simple, new and returning customers will be impacted by having a faster experience purchasing the tuna. After many iterations of sketches and wireframes, the project culminated in completing a final hifi mockup of what a website made for Kuleana might look like. We then conducted user testing of this final prototype using the remote user testing service, UserTesting.com.</p>
                     <br>
-                    <h6>Return Rate</h6>
-                    <p><u>Null Hypothesis</u>: the return rate for users of interface B is no better than the return rate for users of interface A. In other words, the return rate for users of interface B is either greater than that of A, or less than that of A <i>but not to a statistically significant degree</i>.</p>
-                    <p><u>Alternative Hypothesis</u>: the return rate for users of interface B is better than the return rate for users of interface A. Mathematically, this means that the return rate for users of interface is B less than that of A by a statistically significant degree. In this case, B most likely performs better than A because B's layout is easier to understand, and therefore the user is immediately able to select the items they want and does not need to go back to review their choices before checking out. Additionally, since B's layout is more aesthetically-pleasing, the user will be motivated to make a purchase and will not be feel the need to second-guess themselves and return to review the original page before paying and exiting the site.</p>
+                    <p><u>Sketching</u>
+                        <br>We made four different possible designs for our startup’s app. Please note the following:
+                        <ul>
+                            <li>Each group member drew 4 separate sketches. The sketches represented different pages that might exist on a website for Kuleana. In total, we had 8 different pages that we attempted to represent.</li>
+                            <li>From our 16 sketches, we narrowed down the number of total screens that we were considering for our website from 8 to 4, based on which screens we thought were most important to achieving our goal of informing the user about the product and providing a way to purchase the product. For example, a page devoted to purchasing the product was prioritized over a “meet the team” page.</li>
+                            <li>We also prioritized creative ideas and pages that would allow for a greater variety of layouts, while still keeping fundamental consistency throughout the website.</li>
+                            <li>We chose to use the navbar from sketch 1 as the main design for the navbar due to its simplicity and symmetry.</li>
+                            <li>We decided on a color scheme that included a lot of green to reinforce the company’s values of sustainability and environmental friendliness. We also decided on a circular or rounded edges design to provide cohesion to the website.</li>
+                        </ul></p>
+                    <br>
+                    <p><u>Combining Ideas into a Wireframe</u></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="outer" id="data">
+    <div class="outer" id="mockup">
         <div class="container">
             <div class="card justify-content-center align-items-center">
                 <div class="card-body m-5">
-                    <h4 class="text-center">Part 2: Collecting Data and Applying Scripts</h4>
+                    <h4 class="text-center">Part 2: Mockups</h4>
                     <br>
-                    <p>For this A/B test, I collected data from over 40 user sessions. The link provided in the <i>Overview</i> section, which randomly opens to interface A or B, was sent to my peers. They filled their carts with at least $150 of cacti. Each of their clicks was recorded, providing me with session-specific data including their date and time of access and their click targets.</p>
+                    <p><u>Interactive High Fidelity Mockup</u>
+                        <br>We used Figma to create a hi-fi prototype - an enhanced version of our final wireframe - populated with realistic content. This involved making several design choices:
+                        <ul>
+                            <li><b>Hierarchy: </b>We chose fonts and font sizes based on their function on the site. For example, we had one main title font and font size. Smaller titles followed a consistent styling and size as well, and we also had a consistent paragraph font size.</li>
+                            <li><b>Interaction: </b>We decided to focus on making interaction straight-forward and easy to use. For example, we provided explicit instructions on hovering on our Mission page to eliminate any possible confusion. Furthermore, clickable elements would be enlarged and have a green border upon hover to make it clear that they can be clicked.</li>
+                            <li><b>Navigation: </b>Our navbar contained the main sections of the site, which were accessible from every page. Certain pages also featured buttons that would navigate to different parts of the site such as the checkout button on the shop page.</li>
+                        </ul></p>
                     <br>
-                    <p>The data was then extracted and filtered, and transferred to Excel for further processing. The processed data underwent statistical tests run by python scripts, the results of which are analyzed in Part 3.</p>
+                    <p><u>Mockup Crit in Studio</u>
+                        <br>For the mockup crit we had 1 minute to briefly introduce out startup and prototype. Our peers then interacted with our prototype for 2 minutes. We received feedback from both our peers and a guest industry critic. The following table lists the feedback we received and the changes we made in response.</p>
+                        <table style="width:90%" class="center_table">
+                            <tr>
+                              <th class="text-center">Feedback</th>
+                              <th class="text-center">Changes</th> 
+                            </tr>
+                            <tr>
+                              <td>The purchase button on the Recipe page is confusing because it is unclear whether the user is purchasing only the tuna or all components required by the recipe.</td>
+                              <td>We replaced the purchase button with a download button, which we believe would be more helpful and intuitive for users since we also added a Shop page to the nav bar.</td>
+                            </tr>
+                            <tr>
+                              <td>Add a feature to edit the amount of tuna someone has purchased.</td>
+                              <td>We added an edit button next to the amount of tuna on the checkout page that takes the user back to Shop to change their order.</td>
+                            </tr>
+                            <tr>
+                              <td>The prototype has an inconsistent use of hover. Sometimes images expand without having a green border and are not clickable.</td>
+                              <td>We removed the unclickable, expanding images on the Home page to focus on simplicity and usability.</td>
+                            </tr>
+                            <tr>
+                                <td>Your team should consider two different use cases: exploring vs. purchasing.</td>
+                                <td>Instead of having a purchase section on the home page, which may be a little aggressive, we added a shop page on the navbar for a more balanced approach.</td>
+                            </tr>
+                            <tr>
+                                <td>Purchase should be more visible. It is difficult to remember that the option to purchase is on the Home page, especially since it is at the bottom.</td>
+                                <td>Added a shop page, which is dedicated to purchasing and now contains the information in the purchase section that was originally on the home page.</td>
+                            </tr>
+                            <tr>
+                                <td>The size of the screens with the white border makes the website look like it is intended for mobile.</td>
+                                <td>We expanded the size of the screen to match most screens, which eliminated the white space on the sides for 15 inch laptops.</td>
+                            </tr>
+                            <tr>
+                                <td>Font size is too big (also makes it look like it is intended for mobile).</td>
+                                <td>We reduced the overall font size throughout the site.</td>
+                            </tr>
+                        </table>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="outer" id="conclusions">
+    <div class="outer" id="testing">
         <div class="container">
             <div class="card justify-content-center align-items-center">
                 <div class="card-body m-5">
-                    <h4 class="text-center">Part 3: Conclusions and Takeaways</h4>
-                    <p>After running multiple statistical tests, I concluded that the difference between the performances of interfaces B and A was not statistically significant. The following infographic summarizes the results of these tests:</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                      <img class="infographic" src="./images/infographic1.png" alt="infographic 1">
-                      <br>
-                      <img class="infographic" src="./images/infographic2.png" alt="infographic 2">
-                    </div>
+                    <h4 class="text-center">Part 3: User Testing</h4>
                     <br>
-                    <p>Finally, here are my overall takeaways from this assignment about A/B testing in general:
-                      <ul>
-                        <li>Collecting data from a limited audience makes test results less meaningful. In this case, we were gathering data only from our fellow students who understood the goals of the data collection and tests, and this likely impacted how they interacted with the two interfaces.</li>
-                        <li>It is possible that several small changes will not change the user experience in a way that will appear statistically significant, even if these changes dramatically improve a website's aesthetics (although aesthetics are subjective...).</li>
-                        <li>A/B testing can inform creators about how users interact with their product. Importantly, creators may discover that changes that they consider important are not of significant value to users.</li>
-                      </ul>
-                      </p>
+                    <p>Having test participants try out an interface is an important part of testing and a valuable source of feedback. We conducted our own usability test through a remote user testing service (<a class="blue-text" href="https://www.usertesting.com/" target="_blank">UserTesting.com</a>), using our interactive hi-fi prototype. We selected one task (which consisted of several sub-tasks) that we wanted users to complete on our interactive prototype.
+                    </p>
+                    <br>
+                    <p><u>Introduction</u>
+                        <ul>
+                            <li><b>Scenario: </b>Your best friend Jeff has recently decided to become a vegetarian and is obsessed with Kuleana! You decide to visit Kuleana's website to learn more and try it out for yourself!</li>
+                            <li><b>Main Objective: </b>To be able to explain our product and company and then to purchase a pound or more of plant-based tuna.</li>
+                            <li><b><i>Please Note: </i></b>This is not a real website. This is an interactive mockup made on Figma, a prototyping software. Parts of the prototype are not fully complete. For example, some descriptions/animations are empty as we are solely showcasing what the feature would look like in one instance.</li>
+                        </ul></p>
+                    <br>
+                    <p><u>Purpose</u>
+                        <br>The primary task that we assigned users was to explain our product and company and purchase a pound or more of plant-based tuna. Since the purpose of our website is to give an explanation of what Kuleana is and to convert these browsing users into customers, we centered our subtasks on testing whether the prototype is clear, intuitive, and effective in driving purchases.</p>
+                    <br>
+                    <p><u>Subtasks</u>
+                        <ol>
+                            <li>In your own words, please describe what Kuleana is and what we are selling.</li>
+                            <li>Please explain the purpose of the Mission and Community pages. Explain how these pages contributed to your opinion of Kuleana and discuss whether they were effective in accomplishing the purpose that you stated.</li>
+                            <li>Learn one way to use Kuleana's tuna to make a delicious meal by downloading a recipe! Please describe whether this feature would drive you to make a purchase and why/why not.</li>
+                            <li>Purchase a pound or more of tuna and describe whether this process was intuitive or not and why.</li>
+                        </ol></p>
+                    <br>
+                    <p><u>Post-test Questions</u>
+                        <ol>
+                            <li>Was the website designed in a way that made it easy for anyone to understand Kuleana and what the company stands for?</li>
+                            <li>Did the information provided on the website drive you to make a purchase? Please discuss what information would be more effective in doing so.</li>
+                            <li>What did you dislike about this site's usability and intuitiveness? How would you improve it?</li>
+                        </ol></p>
+                    <br>
+                    <p><u>Analysis of Results</u>
+                        <ul>
+                            <li>The first task evaluated the website’s clarity in describing Kuleana’s purpose.
+                                <ul class="inner_list">
+                                    <li class="arrow">Though this task was intended to be given after users explored the website, users were able to gather enough information about Kuleana and the product from the Home page.</li>
+                                </ul>
+                            </li>
+                            <li>The second task evaluated the users’ understanding of Kuleana’s values and whether knowing more about the company helped improve their opinion about Kuleana.
+                                <ul class="inner_list">
+                                    <li class="arrow">All users were able to clearly relay what Kuleana’s mission and product are.</li>
+                                    <li class="arrow">User 1 and 2 wished they knew what the tuna is made from. For example, User 1 noted that knowing what proteins were used in making the fish would help drive her to make a purchase.</li>
+                                    <li class="arrow">In contrast, User 3 said that the company mission, recipes, and community images made his mouth water and made him eager to purchase our product.</li>
+                                </ul>
+                            </li>
+                            <li>The third and fourth subtasks tested whether users were able to effectively navigate the website and accomplish the given tasks. 
+                                <ul class="inner_list">
+                                    <li class="arrow">All users accomplished the two tasks in one to two minutes per task and noted that everything was very straightforward.</li>
+                                    <li class="arrow">Users noted that downloading a recipe would be effective in helping drive purchases because the described meals are much more appealing than just the tuna.</li>
+                                    <li class="arrow">Shopping was very intuitive and every user understood exactly what to do. User 3 even explained how the edit button would take him back to the previous page and then allow him to select a different order before he clicked it.</li>
+                                </ul>
+                            </li>
+                            <li>Overall, users were able to quickly and easily navigate through the website to accomplish the primary task in approximately seven minutes.</li>
+                        </ul></p>
+                    <br>
+                    <p><u>Errors and User Suggestions</u>
+                        <br>Overall, the responses and results were in line with our expectations, however, we noticed a few pain points.
+                        <ul>
+                            <li>At times, users struggled with the nav bar because Figma’s overlay would occasionally cover it.</li>
+                            <li>Two users failed to realize that the Mission page held more information at the bottom of the page in one of the bubbles. User 1 also failed to realize that the page was scrollable.</li>
+                            <li>User 1 never clicked on the clickable post on the Community page.</li>
+                            <li>To improve the design, all users suggested making pages more animated and interesting.</li>
+                            <li>User 3 suggested including a title for the product on the Shop page for scalability if we expand our product line.</li>
+                        </ul>
+                        Despite these, all users noted that the website had a very clean aesthetic and was intuitive and easy-to-use.</p>
+                    <br>
+                    <p><u>Adjustments</u>
+                        <br>When designing the prototype, we deliberated over balancing functionality with eye-catching aesthetics. Though certain pages can be enhanced with more animations, our tests revealed that the prototype’s consistent structure and effects contributed to an intuitive user experience. Therefore, we would look to add more descriptions and images to make our website more appealing and informative but be cautious of adding too many effects. We appreciated User Three’s comment about adding a title for our product and would add that as well.</p>
                 </div>
             </div>
         </div>
